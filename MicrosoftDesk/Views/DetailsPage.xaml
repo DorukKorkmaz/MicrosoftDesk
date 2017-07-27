@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="{Binding Subject}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MicrosoftDesk.Views.DetailsPage">
+	<ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            
+            <Label Grid.Row="0" Grid.Column="0" Text="Name"></Label>
+            <Label Grid.Row="0" Grid.Column="1" x:Name="nameEntry" Text="{Binding Name}"></Label>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Priority"></Label>
+            <Label Grid.Row="1" Grid.Column="1" x:Name="priorityEntry" Text="{Binding Priority}"></Label>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Location"></Label>
+            <Label Grid.Row="2" Grid.Column="1" x:Name="locationPicker" Text="{Binding Location}"></Label>
+
+            <Label Grid.Row="3" Grid.Column="0" Text="Sublocation"></Label>
+            <Label Grid.Row="3" Grid.Column="1" x:Name="sublocationPicker" Text="{Binding Sublocation}"></Label>
+            
+            <Label Grid.Row="4" Grid.Column="0" Text="Item"></Label>
+            <Label Grid.Row="4" Grid.Column="1" x:Name="itemEntry" Text="{Binding Item}"></Label>
+
+            <Label Grid.Row="5" Grid.Column="0" Text="Accessible Phone"></Label>
+            <Label Grid.Row="5" Grid.Column="1" x:Name="phoneEntry" Text="{Binding AccessiblePhone}"></Label>
+            
+            <Label Grid.Row="6" Grid.Column="0" Text="Subject"></Label>
+            <Label Grid.Row="6" Grid.Column="1" x:Name="subjectEntry" Text="{Binding Subject}"></Label>
+
+            <Label Grid.Row="7" Grid.Column="0" Text="Description"></Label>
+            <Label Grid.Row="7" Grid.Column="1" x:Name="descriptionEntry" Text="{Binding Description}"></Label>
+                                            
+            <Image Grid.Row="8" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" x:Name="image"/>
+        </Grid>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Requests" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MicrosoftHelpDesk.Views.RequestsPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New Request" Clicked="onItemNewRequest"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid>
+            <ListView x:Name="listView" ItemsSource="{Binding .}" ItemSelected="onItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Subject}" Detail="{Binding Description}">
+                            <TextCell.ContextActions>
+                                <MenuItem Text="Delete" IsDestructive="True" Clicked="onItemDelete"></MenuItem>
+                            </TextCell.ContextActions>
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ActivityIndicator x:Name="indicator" IsVisible="false" IsRunning="false"></ActivityIndicator>
+        </Grid>
+	</ContentPage.Content>
+</ContentPage>

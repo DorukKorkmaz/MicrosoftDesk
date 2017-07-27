@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{63C43E93-009C-4805-9996-7534BD70E7CD}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MicrosoftDesk</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\IssuePage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\RequestsPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\BlobManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\IssuePage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\RequestsPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\RequestFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailsPage.xaml.cs">
+      <DependentUpon>DetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\AzureService.cs" />
+  </ItemGroup>
+</Project>

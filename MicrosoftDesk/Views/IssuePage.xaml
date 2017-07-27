@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="New Request" Padding="5" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MicrosoftHelpDesk.Views.IssuePage">
+	<ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="Name"></Label>
+            <Entry Grid.Row="0" Grid.Column="1" x:Name="nameEntry" Placeholder="Enter Your Name"></Entry>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Priority"></Label>
+            <Entry Grid.Row="1" Grid.Column="1" x:Name="priorityEntry" Placeholder="Enter Priority"></Entry>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Location"></Label>
+            <Picker Grid.Row="2" Grid.Column="1" x:Name="locationPicker"></Picker>
+
+            <Label Grid.Row="3" Grid.Column="0" Text="Sublocation"></Label>
+            <Picker Grid.Row="3" Grid.Column="1" x:Name="sublocationPicker"></Picker>
+            
+            <Label Grid.Row="4" Grid.Column="0" Text="Item"></Label>
+            <Entry Grid.Row="4" Grid.Column="1" x:Name="itemEntry" Placeholder="Enter Item"></Entry>
+
+            <Label Grid.Row="5" Grid.Column="0" Text="Accessible Phone"></Label>
+            <Entry Grid.Row="5" Grid.Column="1" x:Name="phoneEntry" Placeholder="Enter Phone Number"></Entry>
+            
+            <Label Grid.Row="6" Grid.Column="0" Text="Subject"></Label>
+            <Entry Grid.Row="6" Grid.Column="1" x:Name="subjectEntry" Placeholder="Enter Subject"></Entry>
+
+            <Label Grid.Row="7" Grid.Column="0" Text="Description"></Label>
+            <Entry Grid.Row="7" Grid.Column="1" x:Name="descriptionEntry" Placeholder="Enter Description"></Entry>
+
+            <Image Grid.Row="8" Grid.Column="1" Grid.RowSpan="2" x:Name="image"/>
+
+            <Grid Grid.Row="8" Grid.Column="0" Grid.RowSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Image"></Label>
+                <Button Grid.Row="1" Grid.Column="0" x:Name="cameraButton" Text="Take Photo" Clicked="onTakePhoto"/>
+                <Button Grid.Row="2" Grid.Column="0" x:Name="pickButton" Text="Pick Photo" Clicked="onPickPhoto"/>
+            </Grid>
+            <Button Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" Text="Add" Clicked="onAddClick"></Button>
+
+            <ActivityIndicator x:Name="indicator" IsVisible="false" IsRunning="false" Grid.RowSpan="11" Grid.ColumnSpan="2"></ActivityIndicator>
+        </Grid>
+	</ContentPage.Content>
+</ContentPage>

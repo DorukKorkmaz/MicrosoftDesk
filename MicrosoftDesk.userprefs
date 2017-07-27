@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{6E919A46-291E-43A6-8D2C-EB6FECBCE10A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MicrosoftDesk/Views/RequestsPage.xaml.cs">
+    <Files>
+      <File FileName="MicrosoftDesk/Views/DetailsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="MicrosoftDesk/Views/RequestsPage.xaml" Line="23" Column="1" />
+      <File FileName="MicrosoftDesk/Views/RequestsPage.xaml.cs" Line="46" Column="41" />
+      <File FileName="MicrosoftDesk/Services/BlobManager.cs" Line="1" Column="1" />
+      <File FileName="MicrosoftDesk/Services/AzureService.cs" Line="66" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.MicrosoftDesk.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.261EA473-098A-48F7-BBE3-74A2A9D730B8" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MicrosoftDesk.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MultiItemStartupConfigurations />
+</Properties>
